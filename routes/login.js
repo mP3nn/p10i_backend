@@ -1,9 +1,8 @@
 const express = require('express')
 const router = express.Router()
-const cors = require('cors')
 
-router.post('/', cors(), (req, res) => {
-    let db = req.app.locals.db
+router.post('/',  (req, res) => {
+    //let db = req.app.locals.db
 
     const {User, Pass} = req.body
 
